@@ -15,32 +15,55 @@ Descripciones: 16px
 *{
     box-sizing: border-box;
 }
-body{
-    background-color: #ebebeb; /*gris claro*/
-    font-family: 'Roboto', sans-serif;
-    color: #666;
-    font-size: 12px;
-    margin: 0px;
-}
 
 header{
     background-color: #EAC926;
     text-align: center;
     color: black;
     padding-top: 1px;
-    margin-top: -35px;
+    /* margin-top: -35px; */
     padding-bottom: 1px;
 }
 
-.logo{
-    width: 160px;
-    margin-left: 30px;
-    margin-top: 50px;
+.top {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.search-bar{
-    margin-left: 20px;
-    text-align: left;
+.top img {
+    width: 45%;
+}
+
+.search-bar {
+    width: 45%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.search-bar input {
+    width: 85%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.top button {
+    background-color: white;
+    border: none;
+    width: 5%;
+}
+
+.fas.fa-search{
+    background-color: white;
+}
+
+.top p{
+    width: 100vw;
 }
 
 nav{
@@ -83,45 +106,53 @@ nav a{
     height: 200px;
 }
 
+body{
+    background-color: #ebebeb; /*gris claro*/
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 12px;
+    margin: 0px;
+}
+
 #banner{
-    margin-left: -10px;
-    margin-right: -10px;
+    width: 100vw;
     margin-top: -20px;
-    max-width: 110%;
 }
 
-.l-productos article div{
-    border-top: 1px #ebebeb solid;
-    margin-top: 10px;
+main h3{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
-/* .l-productos article img{
-    
-} */
+.l-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .producto{
     text-align: left;
     background-color: white;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
+.producto div{
+    border-top: 1px #ebebeb solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: baseline;
+    z-index: -1;
+    height: 100px;
+}
 .producto p{
     text-align: left;
     padding-left: 15px;
-}
-
-.fas.fa-truck {
-    color: #39b54a;
-    border: solid #39b54a 1px;
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: -15px;
-    padding-left: 6px;
-    padding-top: 8px;
 }
 
 .producto img {
@@ -136,18 +167,36 @@ nav a{
 .precios{
     color: black;
     font-size: 18px;
+    width: 30%;
+    height: 22px;
 }
 
 .descuentos{
     color: #39b54a;
     font-size: 16px;
-    margin-top: -20px;
+    width: 70%;
+    height: 22px;
 }
 
 .descripciones{
     font-size: 16px; 
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     display: none;
+}
+
+.producto i {
+    display: block;
+    color: #39b54a;
+    background-color: #fff;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding-top: 7px;
+    padding-left: 5px;
+    position: relative;
+    right: -80%;
+    top: 15px; 
 }
 
 .titular{
@@ -191,8 +240,34 @@ footer{
     /* *{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     } */
+    .top{
+        width: 100vw;
+    }
+
+    .top img{
+        width: 30vw;
+    }
+
+    .search-bar{
+        width: 30vw;
+    }
+
+    .top p{
+        width: 30vw;
+    }
+
     nav {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav div{
+        width: 45vw;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
     }
     .descripciones {
         display: block;  
@@ -200,15 +275,15 @@ footer{
     .burger-menu{
         display: none;
     }
-
+    .producto {
+        width: 41vw;
+    }
+    
 }
 
 @media (min-width: 769px) {
 
-    nav {
-        display: block;
-    }
-    .descripciones {
-        display: block;   
+    .producto {
+        width: 20vw;
     }
 }

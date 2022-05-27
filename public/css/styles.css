@@ -167,15 +167,17 @@ main h3{
 .precios{
     color: black;
     font-size: 18px;
-    width: 30%;
+    width: 25%;
     height: 22px;
+    margin-left: 5%;
 }
 
 .descuentos{
     color: #39b54a;
     font-size: 16px;
-    width: 70%;
+    width: 60%;
     height: 22px;
+    margin-left: 10%;
 }
 
 .descripciones{

@@ -236,10 +236,83 @@ footer{
     font-size: 14px;
 }
 
+.formulario{
+    background-color: #ebebeb;
+    width: 90vw;
+    margin-top: 20px;
+    margin-left: 5vw;
+    margin-bottom: 20px;
+}
+
+.formulario input{
+    height: 30px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-left: 10px;
+}
+
+.formulario h2{
+    padding-left: 5%;
+    color: black;
+    margin-bottom: -10px;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label{
+    display: flex;
+    align-items: baseline;
+    color: black;
+}
+
+.formulario label p{
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario div input{
+    width: auto;
+    height: auto;
+}
+
+.botonFormulario{
+    height: 30px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: black 1px solid;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.botonFormulario:hover{
+    background-color: gray;
+}
+
+.botonFormulario:active{
+    background-color: #666;
+}
+
 @media (min-width: 361px) {
-    /* *{
+    .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } */
+    }
+    
+    .formulario{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
     .top{
         width: 100vw;
     }

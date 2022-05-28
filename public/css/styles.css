@@ -36,32 +36,6 @@ header{
     width: 45%;
 }
 
-.search-bar {
-    width: 45%;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: start;
-}
-
-.search-bar input {
-    width: 85%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-}
-
-.top button {
-    background-color: white;
-    border: none;
-    width: 5%;
-}
-
-.fas.fa-search{
-    background-color: white;
-}
-
 .top p{
     width: 100vw;
 }
@@ -278,7 +252,7 @@ footer{
     margin-left: 10px;
 }
 
-.radio{
+.formHorizontal{
     display: flex;
     justify-content: space-around;
 }
@@ -295,6 +269,8 @@ footer{
     border-radius: 5px;
     border: black 1px solid;
     padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -304,6 +280,35 @@ footer{
 
 .botonFormulario:active{
     background-color: #666;
+}
+
+@media (max-width: 360px) {
+    .search-bar {
+    width: 45%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.search-bar input {
+    width: 85%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.top button {
+    background-color: white;
+    border: none;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.fas.fa-search{
+    background-color: white;
+}
 }
 
 @media (min-width: 361px) {
@@ -323,8 +328,16 @@ footer{
         width: 30vw;
     }
 
-    .search-bar{
+    .search-bar {
         width: 30vw;
+        display: flex;
+        height: 22px;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .search-bar input{
+        width: 80%;
     }
 
     .top p{

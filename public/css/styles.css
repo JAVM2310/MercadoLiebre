@@ -288,6 +288,14 @@ footer{
     background-color: #666;
 }
 
+#login:hover{
+    background-color: #0022AA;
+}
+
+#login:active{
+    background-color: #0022AA;
+}
+
 @media (max-width: 360px) {
     .search-bar {
     width: 45%;

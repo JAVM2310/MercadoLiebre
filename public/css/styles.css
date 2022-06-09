@@ -246,9 +246,10 @@ footer{
 .formulario{
     background-color: #ebebeb;
     width: 90vw;
+    margin: auto;
     margin-top: 20px;
-    margin-left: 5vw;
     margin-bottom: 20px;
+    max-width: 600px;
 }
 
 .formulario input{

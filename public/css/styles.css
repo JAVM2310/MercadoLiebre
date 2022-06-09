@@ -157,7 +157,9 @@ main h3{
 
 .descripciones{
     font-size: 16px; 
+    height: 0px;
     display: none;
+    overflow: hidden;
     transition: all 200ms;
 }
 
@@ -181,12 +183,35 @@ main h3{
     transform: rotate(-90deg);
 }
 
+.producto:hover > div .descripciones{
+    height: auto;
+    overflow: visible;
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 10px 20px 10px;
+    margin: 0px;
+    box-shadow: 0px 10px 10px 0px rgb(100, 100, 100);
+    z-index: 9;
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
 .titular{
     padding-top: 45px;
 }
 
-.titulares-icon{
+.titular i{
     text-align: center;
+    color: blue;
+    padding-bottom: 15px;
+}
+
+.titular i:hover{
+    color: #EAC926;
 }
 
 .titulares{
@@ -326,9 +351,9 @@ footer{
 }
 
 @media (min-width: 361px) {
-    .producto{
+    /* .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    } */
     
     .formulario{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -375,12 +400,12 @@ footer{
     .producto {
         width: 41vw;
     }
-    
-    .producto:hover > .descripciones {
-        overflow: visible;
-        display: block;
-    }
 
+    .producto:hover div{
+        height: 60px;
+    }
+    
+    
 }
 
 @media (min-width: 769px) {
@@ -399,4 +424,6 @@ footer{
     footer article div{
         width: 25vw;
     }
+
+
 }
